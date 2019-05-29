@@ -34,8 +34,8 @@ class Passenger {
   }
   
   driver() {
-    return store.drivers.find(trip => {
-      return trip.passengerId = driver.id
+    return this.trips.find(trip => {
+      return trip.driver
     })
   }
 }
