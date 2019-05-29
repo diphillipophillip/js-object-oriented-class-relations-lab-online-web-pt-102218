@@ -17,6 +17,11 @@ class Passenger {
     this.name = name
     store.passengers.push(this)
   }
+  trips() {
+    return store.trips.find(trips => {
+      return trip.id === this.tripId
+    })
+  }
 }
 
 class Trip {
