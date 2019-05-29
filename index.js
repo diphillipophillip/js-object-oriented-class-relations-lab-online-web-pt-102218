@@ -17,17 +17,6 @@ class Passenger {
     this.name = name
     store.passengers.push(this)
   }
-  trips() {
-    return store.trips.filter(trips => {
-      return trip.passengerId === this.id
-    })
-  }
-  
-  drivers() {
-    return store.drivers.find(drivers => {
-      return trip.driver 
-    })
-  }
 }
 
 class Trip {
