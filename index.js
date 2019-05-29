@@ -22,6 +22,12 @@ class Passenger {
       return trip.passengerId === this.id
     })
   }
+  
+  drivers() {
+    return store.drivers.find(drivers => {
+      return driver.passengerId === this.id
+    })
+  }
 }
 
 class Trip {
