@@ -34,7 +34,7 @@ class Passenger {
   }
   
   driver() {
-    return this.trips.find(trip => {
+    return this.trips.map(trip => {
       return trip.driver
     })
   }
