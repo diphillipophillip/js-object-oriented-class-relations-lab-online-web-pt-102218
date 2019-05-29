@@ -28,7 +28,9 @@ class Passenger {
     store.passengers.push(this)
   }
   trips() {
-    return store.
+    return store.trips.find(trip => {
+      
+    })
   }
 }
 
