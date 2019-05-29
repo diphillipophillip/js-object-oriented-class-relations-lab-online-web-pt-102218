@@ -28,7 +28,7 @@ class Passenger {
     store.passengers.push(this)
   }
   trips() {
-    return store.trips.find(trip => {
+    return store.trips.filter(trip => {
       return trip.PassengerId === this.id 
     })
   }
