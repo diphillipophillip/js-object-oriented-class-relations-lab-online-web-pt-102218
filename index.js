@@ -29,7 +29,7 @@ class Passenger {
   }
   trips() {
     return store.trips.find(trip => {
-      return tripPassengerId
+      return trip.PassengerId
     })
   }
 }
